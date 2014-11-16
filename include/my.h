@@ -5,7 +5,7 @@
 ** Login   <david_h@epitech.net>
 ** 
 ** Started on  Thu Oct  9 11:09:05 2014 David Sullivan
-** Last update Sun Nov 16 12:46:49 2014 david_h
+** Last update Sun Nov 16 13:29:55 2014 david_h
 */
 
 #ifndef MY_H_
@@ -44,9 +44,9 @@ int	my_showmem(char *str);
 char	*my_strcat(char *dest, char *src);
 char	*my_strncat(char *dest, char *src, int nb);
 int	my_strlcat(char *dest, char *src, int size);
-int     str(va_list list);
-int     charput(va_list list);
-int     numput(va_list list);
+int     m_pt_str(va_list list);
+int     m_pt_putchar(va_list list);
+int     m_pt_num(va_list list);
 int     stroctal(va_list list);
 int     unexamin(va_list list);
 int     unexamaj(va_list list);

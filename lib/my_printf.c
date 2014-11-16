@@ -5,7 +5,7 @@
 ** Login   <david_h@epitech.net>
 ** 
 ** Started on  Sun Nov 16 12:21:30 2014 david_h
-** Last update Sun Nov 16 13:24:14 2014 david_h
+** Last update Sun Nov 16 13:45:00 2014 david_h
 */
 
 #include        <stdlib.h>
@@ -33,7 +33,8 @@ int             chk_fl(char *format, char *flag_tab, flag *func_tab, int i, va_l
 
 char            *tab(char *tab)
 {
-  tab = malloc(sizeof(char) * 11);
+  if (tab = malloc(sizeof(char) * 11) == NULL)
+    return (0);
 
   tab[0] = 'd';
   tab[1] = 's';
@@ -53,10 +54,10 @@ flag            *tab_func(flag *tab_func)
 {
   tab_func = malloc(sizeof(flag) * 11);
 
-  tab_func[0] = numput;
-  tab_func[1] = str;
-  tab_func[2] = charput;
-  tab_func[3] = numput;
+  tab_func[0] = m_pt_num;
+  tab_func[1] = m_pt_str;
+  tab_func[2] = m_pt_putchar;
+  tab_func[3] = m_pt_num;
   tab_func[4] = unoctal;
   tab_func[5] = unbin;
   tab_func[6] = unexamin;
@@ -78,7 +79,7 @@ void             my_printf(char *fmt, ...)
   func_tab = tab_func(func_tab);
   flag_tab = tab(flag_tab);
   i = 0;
-  while(fmt[i])
+  while (fmt[i])
     {
       if (fmt[i] == '%')
         {

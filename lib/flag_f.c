@@ -5,7 +5,7 @@
 ** Login   <david_h@epitech.net>
 ** 
 ** Started on  Sun Nov 16 12:34:46 2014 david_h
-** Last update Sun Nov 16 13:17:53 2014 david_h
+** Last update Sun Nov 16 13:28:50 2014 david_h
 */
 
 #include        <stdarg.h>
@@ -13,7 +13,7 @@
 
 typedef         int (*flag)(va_list);
 
-int             str(va_list list)
+int             m_pt_str(va_list list)
 {
   char          *format;
 
@@ -21,7 +21,7 @@ int             str(va_list list)
   my_putstr(format);
 }
 
-int             charput(va_list list)
+int             m_pt_putchar(va_list list)
 {
   char          c;
 
@@ -29,7 +29,7 @@ int             charput(va_list list)
   my_putchar(c);
 }
 
-int             numput(va_list list)
+int             m_pt_num(va_list list)
 {
   int           nb;
 

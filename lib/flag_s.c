@@ -5,11 +5,11 @@
 ** Login   <david_h@epitech.net>
 ** 
 ** Started on  Sun Nov 16 12:35:37 2014 david_h
-** Last update Sun Nov 16 12:44:00 2014 david_h
+** Last update Sun Nov 16 13:45:16 2014 david_h
 */
 
-#include        "../include/my.h"
 #include        <stdarg.h>
+#include        "../include/my.h"
 
 typedef         int (*flag)(va_list);
 
