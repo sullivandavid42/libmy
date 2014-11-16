@@ -5,7 +5,7 @@
 ** Login   <david_h@epitech.net>
 ** 
 ** Started on  Sun Nov 16 12:35:37 2014 david_h
-** Last update Sun Nov 16 13:45:16 2014 david_h
+** Last update Sun Nov 16 18:08:22 2014 david_h
 */
 
 #include        <stdarg.h>
@@ -13,7 +13,7 @@
 
 typedef         int (*flag)(va_list);
 
-int             unexamin(va_list list)
+int             m_ptunexa_min(va_list list)
 {
   unsigned int  nb;
   int           nb2;
@@ -30,7 +30,7 @@ int             unexamin(va_list list)
   my_putnbr_base(nb, base);
 }
 
-int             unbin(va_list list)
+int             m_pt_bin(va_list list)
 {
   unsigned int  nb;
   char          *base;
@@ -40,7 +40,7 @@ int             unbin(va_list list)
   my_putnbr_base(nb, base);
 }
 
-int             unoctal(va_list list)
+int             m_pt_octal(va_list list)
 {
   unsigned int  nb;
   char          *base;
@@ -50,7 +50,7 @@ int             unoctal(va_list list)
   my_putnbr_base(nb, base);
 }
 
-int             undec(va_list list)
+int             m_pt_dec(va_list list)
 {
   unsigned int  nb;
   char          *base;
@@ -59,7 +59,7 @@ int             undec(va_list list)
   my_put_nbr(nb);
 }
 
-int             exapoint(va_list list)
+int             m_pt_point(va_list list)
 {
   void          *format;
   char          *base;

@@ -5,7 +5,7 @@
 ** Login   <david_h@epitech.net>
 ** 
 ** Started on  Thu Oct  9 11:09:05 2014 David Sullivan
-** Last update Sun Nov 16 13:29:55 2014 david_h
+** Last update Sun Nov 16 18:08:19 2014 david_h
 */
 
 #ifndef MY_H_
@@ -47,13 +47,13 @@ int	my_strlcat(char *dest, char *src, int size);
 int     m_pt_str(va_list list);
 int     m_pt_putchar(va_list list);
 int     m_pt_num(va_list list);
-int     stroctal(va_list list);
-int     unexamin(va_list list);
-int     unexamaj(va_list list);
-int     unbin(va_list list);
-int     unoctal(va_list list);
-int     undec(va_list list);
-int     exapoint(va_list list);
+int     m_pt_stroctal(va_list list);
+int     m_ptunexa_min(va_list list);
+int     m_pt_unexa_up(va_list list);
+int     m_pt_bin(va_list list);
+int     m_pt_octal(va_list list);
+int     m_pt_dec(va_list list);
+int     m_pt_point(va_list list);
 void	my_printf(char *format, ...);
 
 #endif

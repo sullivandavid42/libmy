@@ -5,7 +5,7 @@
 ** Login   <david_h@epitech.net>
 ** 
 ** Started on  Sun Nov 16 12:34:46 2014 david_h
-** Last update Sun Nov 16 13:28:50 2014 david_h
+** Last update Sun Nov 16 14:30:53 2014 david_h
 */
 
 #include        <stdarg.h>
@@ -37,7 +37,7 @@ int             m_pt_num(va_list list)
   my_put_nbr(nb);
 }
 
-int             stroctal(va_list list)
+int             m_pt_stroctal(va_list list)
 {
   char          *format;
   char          *base;
@@ -64,7 +64,7 @@ int             stroctal(va_list list)
     }
 }
 
-int             unexamaj(va_list list)
+int             m_pt_unexa_up(va_list list)
 {
   int           nb;
   unsigned int  nb2;
