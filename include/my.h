@@ -5,11 +5,13 @@
 ** Login   <david_h@epitech.net>
 ** 
 ** Started on  Thu Oct  9 11:09:05 2014 David Sullivan
-** Last update Sat Oct 25 18:20:50 2014 David Sullivan
+** Last update Sun Nov 16 12:46:49 2014 david_h
 */
 
 #ifndef MY_H_
 #define MY_H_
+
+#include        <stdarg.h>
 
 void	my_putchar(char c);
 int	my_isneg(int nb);
@@ -42,5 +44,16 @@ int	my_showmem(char *str);
 char	*my_strcat(char *dest, char *src);
 char	*my_strncat(char *dest, char *src, int nb);
 int	my_strlcat(char *dest, char *src, int size);
+int     str(va_list list);
+int     charput(va_list list);
+int     numput(va_list list);
+int     stroctal(va_list list);
+int     unexamin(va_list list);
+int     unexamaj(va_list list);
+int     unbin(va_list list);
+int     unoctal(va_list list);
+int     undec(va_list list);
+int     exapoint(va_list list);
+void	my_printf(char *format, ...);
 
 #endif

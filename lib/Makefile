@@ -5,7 +5,7 @@
 ## Login   <david_h@epitech.net>
 ## 
 ## Started on  Mon Oct 20 09:28:22 2014 David Sullivan
-## Last update Thu Oct 30 15:13:07 2014 david_h
+## Last update Sun Nov 16 12:41:09 2014 david_h
 ##
 
 CFLAGS += -Wall
@@ -47,17 +47,20 @@ SRC	= convert_base.c\
 	  my_strstr.c\
 	  my_strupcase.c\
 	  my_strdup.c\
-	  my_swap.c
+	  my_swap.c \
+	  flag_f.c \
+	  flag_s.c \
+	  my_printf.c
 
 OBJ	= $(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME):
-	@gcc -c $(SRC)
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
-	@cp $(NAME) ../
+	gcc -c $(SRC)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
+	cp $(NAME) ../
 
 clean: 
 	rm -f $(OBJ)
